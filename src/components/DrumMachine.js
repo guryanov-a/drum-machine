@@ -87,7 +87,7 @@ class DrumMachine extends Component {
   }
 
   handleKeyDown = (e) => {
-    const key = e.key;
+    const key = e.key.toLowerCase();
     const audioBtn = document.getElementById(`drum-pad-${key}`);
 
     if (audioBtn) {
