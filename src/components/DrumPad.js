@@ -11,7 +11,7 @@ export default ({ id, src, keyboardKey, onClick, name }) => {
 
   const handleClick = (e) => {
     // play audio
-    const audio = e.target.querySelector('audio');
+    const audio = e.target.closest('.drum-pad').querySelector('audio');
     audio.currentTime = 0;
     audio.play();
 
