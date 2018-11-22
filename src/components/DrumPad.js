@@ -22,7 +22,7 @@ export default ({ id, src, keyboardKey, onClick, name }) => {
   return (
     <button id={ id } className="drum-pad" onClick={handleClick}>
       <Text className="text">{ keyboardKeyText }</Text>
-      <audio id={ keyboardKeyText } className="clip" src={`${process.env.PUBLIC_URL}sounds/${src}`} crossOrigin="anonymous" />
+      <audio id={ keyboardKeyText } className="clip" src={`sounds/${src}`} />
     </button>
   );
 };
